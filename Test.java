@@ -5,7 +5,6 @@ public class Test {
 
 	public static void main(String[] args) {
 		int input = 1234;
-		Test test = new Test();
 		System.out.println(reverse(input));
 		System.out.println(reverseSecondApproach(input));
 	}
