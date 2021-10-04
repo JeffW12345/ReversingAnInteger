@@ -20,7 +20,7 @@ public class Test {
 	}
 	
 	private static int reverseSecondApproach(int input) {
-		int newNum = 0;
+		long newNum = 0;
 		while(input > 0) {
 			newNum *= 10;
 			newNum += input % 10;
