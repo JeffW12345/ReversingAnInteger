@@ -1,5 +1,6 @@
 // Reverses a positive integer (variable 'input' in the main method). For example, returns 4321 if 'input' is 1234.
 // Two different approaches are used to arrive at the same result. 
+// Any zeros at prior to the first non-zero digit in the reversed number are omitted from the output. 
 
 public class Test {
 
