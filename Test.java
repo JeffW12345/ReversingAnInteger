@@ -1,0 +1,32 @@
+// Reverses a positive integer (variable 'input' in the main method). For example, returns 4321 if 'input' is 1234.
+// Two different approaches are used to arrive at the same result. 
+
+public class Test {
+
+	public static void main(String[] args) {
+		int input = 1234;
+		Test test = new Test();
+		System.out.println(reverse(input));
+		System.out.println(reverseSecondApproach(input));
+	}
+
+	private static int reverse(int input) {
+		Integer inputAsInteger = input;
+		String asStr = inputAsInteger.toString();
+		String inReverse = "";
+		for (int i = asStr.length() - 1; i > -1; i--) {
+			inReverse += asStr.charAt(i);
+		}
+		return Integer.parseInt(inReverse);
+	}
+	
+	private static int reverseSecondApproach(int input) {
+		int newNum = 0;
+		while(input > 0) {
+			newNum *= 10;
+			newNum += input % 10;
+			input /= 10;
+		}
+		return newNum;
+	}
+}
